@@ -40,7 +40,7 @@ def get_args():
 
     # --- 自动创建日志目录 ---
     now = datetime.now()
-    args.out = osp.join('logs', 'test', str(args.datasetTest), now.strftime('%Y%m%d_%H%M%S.%f'))
+    args.out = osp.join('./logs', 'test', str(args.datasetTest), now.strftime('%Y%m%d_%H%M%S.%f'))
     if not os.path.exists(args.out):
         os.makedirs(args.out)
 
